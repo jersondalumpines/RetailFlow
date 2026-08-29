@@ -1,0 +1,59 @@
+{
+  "selected_partition_key": "store_id",
+  "candidates": [
+    {
+      "key": "channel",
+      "distinct_groups": 5,
+      "min_group_rows": 26057,
+      "max_group_rows": 274802,
+      "mean_group_rows": 128368.6,
+      "median_group_rows": 111264.0,
+      "max_to_mean_skew": 2.1407260030879827
+    },
+    {
+      "key": "store_id",
+      "distinct_groups": 50,
+      "min_group_rows": 12595,
+      "max_group_rows": 13144,
+      "mean_group_rows": 12836.86,
+      "median_group_rows": 12836.5,
+      "max_to_mean_skew": 1.0239264119107008
+    },
+    {
+      "key": "category",
+      "distinct_groups": 7,
+      "min_group_rows": 51141,
+      "max_group_rows": 137640,
+      "mean_group_rows": 91691.85714285714,
+      "median_group_rows": 80296.0,
+      "max_to_mean_skew": 1.5011147585936124
+    },
+    {
+      "key": "customer_city",
+      "distinct_groups": 4,
+      "min_group_rows": 99232,
+      "max_group_rows": 243920,
+      "mean_group_rows": 160460.75,
+      "median_group_rows": 149345.5,
+      "max_to_mean_skew": 1.520122522174426
+    },
+    {
+      "key": "store_city",
+      "distinct_groups": 3,
+      "min_group_rows": 102149,
+      "max_group_rows": 360142,
+      "mean_group_rows": 213947.66666666666,
+      "median_group_rows": 179552.0,
+      "max_to_mean_skew": 1.683318194636383
+    },
+    {
+      "key": "loyalty_segment",
+      "distinct_groups": 4,
+      "min_group_rows": 52085,
+      "max_group_rows": 280791,
+      "mean_group_rows": 160460.75,
+      "median_group_rows": 154483.5,
+      "max_to_mean_skew": 1.7499045716787438
+    }
+  ]
+}

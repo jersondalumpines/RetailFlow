@@ -1,0 +1,273 @@
+{
+  "sales": {
+    "file": "bm_sales.csv",
+    "table": "sales",
+    "rows": 641843,
+    "columns": 9,
+    "column_names": [
+      "date",
+      "store_id",
+      "sku_id",
+      "customer_id",
+      "quantity",
+      "unit_price",
+      "total_value",
+      "channel",
+      "discount_pct"
+    ],
+    "dtypes": {
+      "date": "object",
+      "store_id": "int64",
+      "sku_id": "int64",
+      "customer_id": "float64",
+      "quantity": "int64",
+      "unit_price": "float64",
+      "total_value": "float64",
+      "channel": "object",
+      "discount_pct": "float64"
+    },
+    "null_counts": {
+      "date": 0,
+      "store_id": 0,
+      "sku_id": 0,
+      "customer_id": 159821,
+      "quantity": 0,
+      "unit_price": 0,
+      "total_value": 0,
+      "channel": 0,
+      "discount_pct": 0
+    },
+    "distinct_counts": {
+      "date": 1765,
+      "store_id": 50,
+      "sku_id": 200,
+      "customer_id": 5000,
+      "quantity": 6,
+      "unit_price": 1227,
+      "total_value": 6062,
+      "channel": 5,
+      "discount_pct": 7
+    },
+    "candidate_key_unique": {
+      "date": false,
+      "store_id": false,
+      "sku_id": false,
+      "customer_id": false
+    }
+  },
+  "customers": {
+    "file": "bm_customers.csv",
+    "table": "customers",
+    "rows": 5000,
+    "columns": 7,
+    "column_names": [
+      "cust_id",
+      "age",
+      "gender",
+      "city",
+      "loyalty_segment",
+      "preferred_channel",
+      "registration_date"
+    ],
+    "dtypes": {
+      "cust_id": "int64",
+      "age": "int64",
+      "gender": "object",
+      "city": "object",
+      "loyalty_segment": "object",
+      "preferred_channel": "object",
+      "registration_date": "object"
+    },
+    "null_counts": {
+      "cust_id": 0,
+      "age": 0,
+      "gender": 0,
+      "city": 0,
+      "loyalty_segment": 0,
+      "preferred_channel": 0,
+      "registration_date": 0
+    },
+    "distinct_counts": {
+      "cust_id": 5000,
+      "age": 10,
+      "gender": 2,
+      "city": 3,
+      "loyalty_segment": 3,
+      "preferred_channel": 5,
+      "registration_date": 1675
+    },
+    "candidate_key_unique": {
+      "cust_id": true
+    }
+  },
+  "stores": {
+    "file": "bm_stores.csv",
+    "table": "stores",
+    "rows": 50,
+    "columns": 5,
+    "column_names": [
+      "store_id",
+      "store_name",
+      "city",
+      "store_type",
+      "opening_date"
+    ],
+    "dtypes": {
+      "store_id": "int64",
+      "store_name": "object",
+      "city": "object",
+      "store_type": "object",
+      "opening_date": "object"
+    },
+    "null_counts": {
+      "store_id": 0,
+      "store_name": 0,
+      "city": 0,
+      "store_type": 0,
+      "opening_date": 0
+    },
+    "distinct_counts": {
+      "store_id": 50,
+      "store_name": 50,
+      "city": 3,
+      "store_type": 3,
+      "opening_date": 50
+    },
+    "candidate_key_unique": {
+      "store_id": true
+    }
+  },
+  "skus": {
+    "file": "bm_skus.csv",
+    "table": "skus",
+    "rows": 200,
+    "columns": 7,
+    "column_names": [
+      "sku_id",
+      "sku_name",
+      "category",
+      "subcategory",
+      "unit_price",
+      "cost_price",
+      "brand"
+    ],
+    "dtypes": {
+      "sku_id": "int64",
+      "sku_name": "object",
+      "category": "object",
+      "subcategory": "object",
+      "unit_price": "float64",
+      "cost_price": "float64",
+      "brand": "object"
+    },
+    "null_counts": {
+      "sku_id": 0,
+      "sku_name": 0,
+      "category": 0,
+      "subcategory": 0,
+      "unit_price": 0,
+      "cost_price": 0,
+      "brand": 0
+    },
+    "distinct_counts": {
+      "sku_id": 200,
+      "sku_name": 200,
+      "category": 7,
+      "subcategory": 33,
+      "unit_price": 196,
+      "cost_price": 196,
+      "brand": 5
+    },
+    "candidate_key_unique": {
+      "sku_id": true
+    }
+  },
+  "inventory": {
+    "file": "bm_inventory.csv",
+    "table": "inventory",
+    "rows": 8735,
+    "columns": 7,
+    "column_names": [
+      "store_id",
+      "sku_id",
+      "stock_on_hand",
+      "reorder_point",
+      "safety_stock",
+      "last_restock_date",
+      "snapshot_date"
+    ],
+    "dtypes": {
+      "store_id": "int64",
+      "sku_id": "int64",
+      "stock_on_hand": "int64",
+      "reorder_point": "int64",
+      "safety_stock": "int64",
+      "last_restock_date": "object",
+      "snapshot_date": "object"
+    },
+    "null_counts": {
+      "store_id": 0,
+      "sku_id": 0,
+      "stock_on_hand": 0,
+      "reorder_point": 0,
+      "safety_stock": 0,
+      "last_restock_date": 0,
+      "snapshot_date": 0
+    },
+    "distinct_counts": {
+      "store_id": 50,
+      "sku_id": 200,
+      "stock_on_hand": 398,
+      "reorder_point": 189,
+      "safety_stock": 100,
+      "last_restock_date": 89,
+      "snapshot_date": 1
+    },
+    "candidate_key_unique": {
+      "store_id": false,
+      "sku_id": false,
+      "snapshot_date": false
+    }
+  },
+  "promotions": {
+    "file": "bm_promotions.csv",
+    "table": "promotions",
+    "rows": 33,
+    "columns": 6,
+    "column_names": [
+      "promo_name",
+      "start_date",
+      "end_date",
+      "discount_pct",
+      "promo_type",
+      "promo_id"
+    ],
+    "dtypes": {
+      "promo_name": "object",
+      "start_date": "object",
+      "end_date": "object",
+      "discount_pct": "int64",
+      "promo_type": "object",
+      "promo_id": "int64"
+    },
+    "null_counts": {
+      "promo_name": 0,
+      "start_date": 0,
+      "end_date": 0,
+      "discount_pct": 0,
+      "promo_type": 0,
+      "promo_id": 0
+    },
+    "distinct_counts": {
+      "promo_name": 33,
+      "start_date": 33,
+      "end_date": 33,
+      "discount_pct": 6,
+      "promo_type": 6,
+      "promo_id": 33
+    },
+    "candidate_key_unique": {
+      "promo_id": true
+    }
+  }
+}

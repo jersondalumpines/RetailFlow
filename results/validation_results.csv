@@ -1,0 +1,6 @@
+metric,matching_rows,total_rows,all_match
+transaction_count,50,50,True
+total_quantity,50,50,True
+revenue_total,50,50,True
+revenue_mean,50,50,True
+group_count,50,50,True
